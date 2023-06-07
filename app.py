@@ -43,3 +43,101 @@
 # x = 3 !=2
 # print(x)
 
+# Logical Operators
+# price = 25
+# print(price > 10 and price < 30)
+# print(10 < price < 30)
+# print(price < 10 or price > 20)
+# print(not price < 10)
+
+# If Statements
+# temperature = 35
+# if temperature > 80:
+#     print("It's a hot day.")
+#     print("Drink plenty of water.")
+# elif temperature > 60:
+#     print("It's a nice day.")
+# elif temperature > 45:
+#     print("It's a little chilly.")
+# else:
+#     print("It's cold, man.")
+# print("Done.")
+
+# weight = input("Weight: ")
+# unit = input("(K)g or (L)bs? ")
+# if unit.upper() == "K":
+#     converted = float(weight) / .45
+#     print("Weight in Lbs: " + str(converted))
+# else:
+#     converted = float(weight) * 0.45
+#     print("Weight in Kgs: " + str(converted))
+# print("Done.")
+
+# While Loops
+# i = 1
+# while i <= 10:
+#     print(i)
+#     i = i + 1
+# while i <= 10:
+#     print(i * '*')
+#     i = i + 1
+
+# Lists
+# names = ["Chase", "John", "Bob", "Mary"]
+# print(names)
+# print(names[0])
+# print(names[-1])
+# names[0] = "Bill"
+# print(names)
+# print(names[0:3])
+
+# Objects
+# numbers = [1, 2, 3, 4, 5]
+# print(numbers)
+# numbers.append(6)
+# print(numbers)
+# print(1 in numbers)
+# numbers.insert(0,"one")
+# print(numbers)
+# numbers.remove(3)
+# print(numbers)
+# print(len(numbers))
+# numbers.clear()
+# print(numbers)
+
+# Iteration
+# numbers = [1, 2, 3, 4, 5]
+# for item in numbers:
+#     print(item)
+#
+# i = 0
+# while i < len(numbers):
+#     print(numbers[i])
+#     i = i + 1
+
+# Range
+# # Setting a range of numbers starting at 1 but ending before 5
+# numbers = range(5)
+# print(numbers)
+# for number in numbers:
+#     print(number)
+#
+# # Setting a range of numbers from 5 to 9
+# numbers = range(5, 10)
+# print(numbers)
+# for number in numbers:
+#     print(number)
+#
+# # Setting a range of numbers from 5 to 10, but every 2nd number
+# numbers = range(5, 10, 2)
+# print(numbers)
+# for number in numbers:
+#     print(number)
+#
+# for number in range(6):
+#     print(number)
+
+# Tuples
+# Tuples are immutable
+numbers = (1, 2, 3, 3)
+print(numbers.count(3))
