@@ -104,6 +104,7 @@
 # print(len(numbers))
 # numbers.clear()
 # print(numbers)
+# print(len(numbers))
 
 # Iteration
 # numbers = [1, 2, 3, 4, 5]
