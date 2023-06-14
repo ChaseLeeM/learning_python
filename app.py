@@ -83,13 +83,36 @@
 #     i = i + 1
 
 # Lists
-# names = ["Chase", "John", "Bob", "Mary"]
+names = ["Chase", "John", "Bob", "Mary"]
 # print(names)
 # print(names[0])
 # print(names[-1])
 # names[0] = "Bill"
 # print(names)
 # print(names[0:3])
+# print(len(names))
+# print(names[2:])
+# names.append('Kyle')
+# print(names)
+# names.insert(2, 'Jenny')
+print(names)
+names_2 = ['Gary', 'Harry', 'Sally']
+# names.insert(0, names_2)
+# print(names)
+names.extend(names_2)
+print(names)
+names.remove('Mary')
+print(names)
+names.pop()
+print(names)
+popped = names.pop()
+print(popped)
+names.reverse()
+print(names)
+names.sort()
+print(names)
+names.sort(reverse=True )
+print(names)
 
 # Objects
 # numbers = [1, 2, 3, 4, 5]
@@ -105,6 +128,7 @@
 # numbers.clear()
 # print(numbers)
 # print(len(numbers))
+
 
 # Iteration
 # numbers = [1, 2, 3, 4, 5]
