@@ -118,6 +118,11 @@
 # print("Chase" in names)
 # for index, name in enumerate(names, start=1):
 #     print(index, name)
+# courses = ['Math', 'English', 'History', 'Art']
+# courses_string = ' - '.join(courses)
+# print(courses_string)
+# new_list = courses_string.split(' - ')
+# print(new_list)
 
 # Objects
 # numbers = [1, 2, 3, 4, 5]
@@ -169,9 +174,47 @@
 #     print(number)
 
 # Tuples
-# Tuples are immutable
-# numbers = (1, 2, 3, 3)
-# print(numbers.count(3))
-courses = ['Math', 'English', 'History', 'Art']
-courses_string = ', '.join(courses)
-print(courses_string)
+# my_list = [1, 2, 3]  # List
+# my_tuple = (1, 2, 3)  # Tuple
+
+# Modifying elements
+# my_list[0] = 0  # Lists are mutable
+# my_tuple[0] = 0  # This will raise an error since tuples are immutable
+
+# Adding elements
+# my_list.append(4)  # You can add elements to lists
+# my_tuple.append(4)  # Tuples do not have an append method
+
+# Iterating over elements
+# for item in my_list:
+#     print(item)
+# for item in my_tuple:
+#     print(item)
+
+# Tuple unpacking
+# x, y, z = my_tuple  # Tuple unpacking is a convenient way to assign values
+
+# List comprehension
+# squared_list = [x**2 for x in my_list]  # List comprehension is a powerful feature for lists
+
+# Sets
+# my_set = {1, 2, 3}  # Set literal
+# print(my_set)
+# my_set.add(4)  # Adding an element to the set
+# print(my_set)
+# my_set.remove(2)  # Removing an element from the set
+# print(my_set)
+cs_courses = {'history', 'math', 'physics', 'compsci'}
+art_courses = {'history', 'math', 'art', 'design'}
+print(cs_courses.intersection(art_courses))
+print(cs_courses.difference(art_courses))
+print(cs_courses.union(art_courses))
+
+# Empty Lists, Sets and Tuples
+# empty_list = []  # Using square brackets
+# empty_list = list()  # Using the list() function
+#
+# empty_set = set()  # Using the set() function
+#
+# empty_tuple = ()  # Using parentheses
+# empty_tuple = tuple()  # Using the tuple() function
