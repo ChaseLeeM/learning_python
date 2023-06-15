@@ -84,7 +84,7 @@
 
 # Lists
 # names = ["Chase", "John", "Bob", "Mary"]
-# print(names)
+# print(names)n
 # print(names[0])
 # print(names[-1])
 # names[0] = "Bill"
@@ -115,6 +115,9 @@
 # print(names)
 # sorted_names = sorted(names)
 # print(sorted_names )
+# print("Chase" in names)
+# for index, name in enumerate(names, start=1):
+#     print(index, name)
 
 # Objects
 # numbers = [1, 2, 3, 4, 5]
@@ -130,6 +133,7 @@
 # numbers.clear()
 # print(numbers)
 # print(len(numbers))
+# print(sum(numbers))
 
 
 # Iteration
@@ -168,4 +172,6 @@
 # Tuples are immutable
 # numbers = (1, 2, 3, 3)
 # print(numbers.count(3))
-
+courses = ['Math', 'English', 'History', 'Art']
+courses_string = ', '.join(courses)
+print(courses_string)
