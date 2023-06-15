@@ -9,7 +9,7 @@
 # age = 2023 - int(birth_year)
 # print("You are " + str(age) + " years old.")
 
-# Conversion functions
+# Conversion functions----------------
 # int() integer
 # bool() boolean
 # float() decimal
@@ -41,16 +41,17 @@
 # x = 3 >= 2
 # x = 3 == 2
 # x = 3 !=2
+# Object Identity: is
 # print(x)
 
-# Logical Operators
+# Logical Operators---------------
 # price = 25
 # print(price > 10 and price < 30)
 # print(10 < price < 30)
 # print(price < 10 or price > 20)
 # print(not price < 10)
 
-# If Statements
+# If Statements---------------
 # temperature = 35
 # if temperature > 80:
 #     print("It's a hot day.")
@@ -73,7 +74,7 @@
 #     print("Weight in Kgs: " + str(converted))
 # print("Done.")
 
-# While Loops
+# While Loops---------------
 # i = 1
 # while i <= 10:
 #     print(i)
@@ -82,7 +83,7 @@
 #     print(i * '*')
 #     i = i + 1
 
-# Lists
+# Lists---------------------
 # names = ["Chase", "John", "Bob", "Mary"]
 # print(names)n
 # print(names[0])
@@ -124,7 +125,7 @@
 # new_list = courses_string.split(' - ')
 # print(new_list)
 
-# Objects
+# Objects-------------------
 # numbers = [1, 2, 3, 4, 5]
 # print(numbers)
 # numbers.append(6)
@@ -141,7 +142,7 @@
 # print(sum(numbers))
 
 
-# Iteration
+# Iteration----------------
 # numbers = [1, 2, 3, 4, 5]
 # for item in numbers:
 #     print(item)
@@ -151,7 +152,7 @@
 #     print(numbers[i])
 #     i = i + 1
 
-# Range
+# Range----------------------
 # # Setting a range of numbers starting at 1 but ending before 5
 # numbers = range(5)
 # print(numbers)
@@ -173,48 +174,101 @@
 # for number in range(6):
 #     print(number)
 
-# Tuples
+# Tuples-------------
 # my_list = [1, 2, 3]  # List
 # my_tuple = (1, 2, 3)  # Tuple
 
-# Modifying elements
+# Modifying elements------------
 # my_list[0] = 0  # Lists are mutable
 # my_tuple[0] = 0  # This will raise an error since tuples are immutable
 
-# Adding elements
+# Adding elements------------
 # my_list.append(4)  # You can add elements to lists
 # my_tuple.append(4)  # Tuples do not have an append method
 
-# Iterating over elements
+# Iterating over elements----------
 # for item in my_list:
 #     print(item)
 # for item in my_tuple:
 #     print(item)
 
-# Tuple unpacking
+# Tuple unpacking------------
 # x, y, z = my_tuple  # Tuple unpacking is a convenient way to assign values
 
-# List comprehension
+# List comprehension------------
 # squared_list = [x**2 for x in my_list]  # List comprehension is a powerful feature for lists
 
-# Sets
+# Sets----------------
 # my_set = {1, 2, 3}  # Set literal
 # print(my_set)
 # my_set.add(4)  # Adding an element to the set
 # print(my_set)
 # my_set.remove(2)  # Removing an element from the set
 # print(my_set)
-cs_courses = {'history', 'math', 'physics', 'compsci'}
-art_courses = {'history', 'math', 'art', 'design'}
-print(cs_courses.intersection(art_courses))
-print(cs_courses.difference(art_courses))
-print(cs_courses.union(art_courses))
+# cs_courses = {'history', 'math', 'physics', 'compsci'}
+# art_courses = {'history', 'math', 'art', 'design'}
+# print(cs_courses.intersection(art_courses))
+# print(cs_courses.difference(art_courses))
+# print(cs_courses.union(art_courses))
 
-# Empty Lists, Sets and Tuples
+# Empty Lists, Sets and Tuples----------------
 # empty_list = []  # Using square brackets
 # empty_list = list()  # Using the list() function
 #
 # empty_set = set()  # Using the set() function
-#
+# empty_set = {} # Does not create a set! This creates an empty Dictionary
+
 # empty_tuple = ()  # Using parentheses
 # empty_tuple = tuple()  # Using the tuple() function
+
+# Dictionaries ------------------
+# student = {'name': 'Chase', 'age': 40, 'courses': ['Python', 'React']}
+# print(student)
+# print(student['name'])
+# print(student['courses'])
+# print(student.get('age'))
+# print(student.get('phone'))  # Prints none instead of an error
+# print(student.get('phone', 'Not Found'))  # Gives back custom message
+# student['phone'] = '555-5555'
+# print(student.get('phone', 'Not Found'))
+# student.update({'name': 'Charles', 'age': 5, 'phone': '123-4567'})
+# print(student)
+# del student['courses']
+# print(student)
+# age = student.pop('age')
+# print(age)
+# print(len(student))
+# print(student)
+# print(student.keys())
+# print(student.values())
+# print(student.items())
+# for key in student:
+#     print(key)
+# for key, value in student.items():
+#     print(key, value)
+
+# Conditionals
+# language = 'Java '
+# if language == 'Python':
+#     print('Language is Python')
+# elif language == 'Java':
+#     print('Language is Java')
+# else:
+#     print('No match')
+
+user = 'Admin'
+logged_in = True
+if user == 'Admin' and logged_in:  # Both variables must be true.
+    print('Admin logged in.')
+else:
+    print("Admin not logged in.")
+
+if user == 'Admin' or logged_in:  # Or will be true if either is true
+    print('Admin logged in.')
+else:
+    print("Admin not logged in.")
+
+if not logged_in:
+    print('log in.')
+else:
+    print("Welcome " + user + '.')
