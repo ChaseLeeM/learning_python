@@ -74,15 +74,6 @@
 #     print("Weight in Kgs: " + str(converted))
 # print("Done.")
 
-# While Loops---------------
-# i = 1
-# while i <= 10:
-#     print(i)
-#     i = i + 1
-# while i <= 10:
-#     print(i * '*')
-#     i = i + 1
-
 # Lists---------------------
 # names = ["Chase", "John", "Bob", "Mary"]
 # print(names)n
@@ -256,19 +247,72 @@
 # else:
 #     print('No match')
 
-user = 'Admin'
-logged_in = True
-if user == 'Admin' and logged_in:  # Both variables must be true.
-    print('Admin logged in.')
-else:
-    print("Admin not logged in.")
+# user = 'Admin'
+# logged_in = True
+# if user == 'Admin' and logged_in:  # Both variables must be true.
+#     print('Admin logged in.')
+# else:
+#     print("Admin not logged in.")
+#
+# if user == 'Admin' or logged_in:  # Or will be true if either is true
+#     print('Admin logged in.')
+# else:
+#     print("Admin not logged in.")
+#
+# if not logged_in:  # If not
+#     print('log in.')
+# else:
+#     print("Welcome " + user + '.')
 
-if user == 'Admin' or logged_in:  # Or will be true if either is true
-    print('Admin logged in.')
-else:
-    print("Admin not logged in.")
+# a = [1, 2, 3]
+# b = [1, 2, 3]
+# print(a == b)
+# print(a is b)
+# print(id(a))
+# print(id(b))
+# b = a
+# print(a is b)
+# print(id(a))
+# print(id(b))
+# print(a == b)
 
-if not logged_in:
-    print('log in.')
-else:
-    print("Welcome " + user + '.')
+# False Values
+# False
+# None
+# Zero of any numeric type
+# Any empty sequence. Example : '', (), [].
+# Any empty mapping : {}.
+# condition = []
+# if condition:
+#     print('Evaluated to True')
+# else:
+#     print('Evaluated to False')
+
+# While Loops---------------
+# i = 1
+# while i <= 10:
+#     print(i)
+#     i = i + 1
+# while i <= 10:
+#     print(i * '*')
+#     i = i + 1
+
+# For Loops-------------
+# nums = [1, 2, 3, 4, 5]
+# for num in nums:
+#     if num == 3:
+#         print('Found.')
+#         break
+#     print(num)
+#
+# for num in nums:
+#     if num == 3:
+#         print('Found.')
+#         continue
+#     print(num)
+# for num in nums:
+#     for letter in 'abc':
+#         print(num, letter)
+# for i in range(1, 11):
+#     print(i)
+
