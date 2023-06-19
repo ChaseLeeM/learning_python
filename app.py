@@ -316,3 +316,23 @@
 # for i in range(1, 11):
 #     print(i)
 
+# Functions-------------
+# def hello_func():
+#     pass  # Allows the function to be empty without throwing an error.
+#
+#
+# hello_func()
+#
+#
+# def hello_func2():
+#     print('Hello!')
+#
+#
+# hello_func2()
+
+def hello_func3():
+    return "Hello"
+
+
+hello_func3()
+print(hello_func3())
