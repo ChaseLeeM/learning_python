@@ -336,3 +336,11 @@ def hello_func3():
 
 hello_func3()
 print(hello_func3())
+print(hello_func3().upper())
+
+
+def hello_func4(greeting, name='You'):
+    return '{}, {}'.format(greeting, name)
+
+
+print(hello_func4('Hi', name='Chase'))
